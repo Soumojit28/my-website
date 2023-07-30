@@ -3,11 +3,15 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Ether.js", "Solidity"],
-    ["Node.js", "TypeScript", "Framer Motion", "react-moralis", "web3.js"],
+    ["Next.js", "JavaScript (ES6+)", "Tailwind CSS", "Ether.js", "Python", "Ts.Ed","MongoDB"],
+    ["Node.js", "TypeScript", "Docker", "Solidity", "Subgraph","Nest.js","Arduino" ],
   ];
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center py-20 bg-AAprimary">
+    <div
+      id="aboutSection"
+      data-aos="fade-up"
+      className="snap-start flex flex-col  items-center py-20 bg-AAprimary"
+    >
       {/* // ? 0.1 About Me */}
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -15,8 +19,15 @@ export default function AboutMe(props) {
       >
         <div className="flex flex-row items-center ">
           <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"} />
-            <span className="text-AAsecondary font-Header text-sm  sm:text-xl"> 01.</span>
+            <ArrowIcon
+              className={
+                "flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"
+              }
+            />
+            <span className="text-AAsecondary font-Header text-sm  sm:text-xl">
+              {" "}
+              01.
+            </span>
             <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
               About Me
             </span>
@@ -29,21 +40,26 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Abdellatif, and I am a passionate software engineer and problem solver, dedicated to
-                creating impactful codes that thrive on the internet. My journey in computer science began in 2009 when
-                I delved into the world of Ethical Hacking using BackTrack OS. Little did I know that programming skills
-                would become essential in pursuing this interest, marking the start of my programming journey.
+                Greetings! I am Soumojit Ash, a passionate software engineer
+                with a penchant for Web3 technologies and a strong
+                problem-solving mindset. With over 2 years of experience, I have
+                honed my expertise in{" "}
+                <span className="text-AAsecondary">Backend development</span>{" "}
+                and <span className="text-AAsecondary">Web3</span>, allowing me
+                to craft innovative solutions for the decentralized world.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Since pursuing my engineering degree, my career has taken me through diverse industries, allowing me to
-                refine my expertise in desktop and web development. In the realm of{" "}
-                <span className="text-AAsecondary">web3</span>, I am dedicated to pushing boundaries and driving
-                advancements. With experience working alongside esteemed organizations like{" "}
-                <span className="text-AAsecondary">ENS Vision</span>, where I played a key role in releasing v2 of{" "}
-                <span className="text-AAsecondary">ENS Vision Marketplace</span> , my passion for web3 and continuous
-                learning drives me to make a positive impact and advance technology.
+                Since pursuing my engineering degree, my career has taken me
+                through diverse industries, allowing me to My journey in
+                software engineering has been a thrilling ride, and Web3 has
+                captured my imagination like nothing else. I believe in the
+                transformative power of blockchain and its potential to
+                revolutionize how we interact with technology. As I continue to
+                explore this dynamic landscape, I stay updated with the latest
+                trends and best practices, ensuring that my work is always
+                future-proof and at the cutting edge of innovation.
               </span>
             </div>
             {/* <div className="font-Header tracking-wide">
@@ -61,7 +77,8 @@ export default function AboutMe(props) {
 
             <div className="font-Header tracking-wide">
               <span className="text-gray-400  ">
-                Here are a few technologies I&apos;ve been working with recently :
+                Here are a few technologies I&apos;ve been working with recently
+                :
               </span>
             </div>
             <div className="font-Header tracking-wide flex flex-row space-x-16">
@@ -69,9 +86,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[0].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}
@@ -81,9 +103,14 @@ export default function AboutMe(props) {
                 <div className="flex flex-col space-y-4 sm:text-base text-sm">
                   {technologies[1].map((tech, index) => {
                     return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
+                      <div
+                        key={index}
+                        className="flex flex-row items-center space-x-2"
+                      >
                         <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
+                        <span className="text-gray-400 sm:text-sm text-xs">
+                          {tech}
+                        </span>
                       </div>
                     );
                   })}

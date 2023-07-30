@@ -11,10 +11,10 @@ const ClickableIcon = props => {
   );
 };
 const IconsData = [
-  { href: "https://github.com/hktitof", Icon: GithubIcon },
-  { href: "https://www.linkedin.com/in/abdellatif-anaflous/", Icon: LinkedinIcon },
-  { href: "https://www.instagram.com/xredme/", Icon: InstagramIcon },
-  { href: "https://www.youtube.com/@abdellatif_anaflous", Icon: YoutubeIcon },
+  { href: "https://github.com/Soumojit28", Icon: GithubIcon },
+  { href: "https://www.linkedin.com/in/soumojit-ash/", Icon: LinkedinIcon },
+  // { href: "https://www.instagram.com/xredme/", Icon: InstagramIcon },
+  // { href: "https://www.youtube.com/@abdellatif_anaflous", Icon: YoutubeIcon },
 ];
 
 export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
@@ -31,14 +31,14 @@ export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop:
           className="group flex flex-col font-mono justify-center items-center  text-gray-400 
     text-sm  space-y-2  "
         >
-          <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
-            Built by Anaflous Abdellatif
+          {/* <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
+            Built by Soumojit Ash
           </span>
 
           <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary">
             <GithubIcon className={"w-4 h-4 text-gray-400 fill-current group-hover:text-AAsecondary"} />
             <span className="">Source code - Github</span>
-          </span>
+          </span> */}
         </div>
       </a>
     </div>
